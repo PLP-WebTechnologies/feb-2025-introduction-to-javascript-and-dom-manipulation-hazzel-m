@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h2 id="welcome">WELCOME HOME!!</h2>
+    <input type="text" id="nameInput" placeholder="Enter name"><br><br>
+    <button onclick="Greet()">Greet</button>
+    <p id="message"></p>
+    <script>
+      
+        function Greet(){
+            const name = document.getElementById("nameInput").value.trim();
+            const msg = document.getElementById("message");
+            const welcome = document.getElementById("welcome")
+    
+            msg.textContent = "Hello, "+name+" how are you doing today";
+            msg.style.color = "blue";
+            welcome.remove();
+        }
+
+        </script> 
+</body>
+</html>
